@@ -1,0 +1,34 @@
+{
+  "name": "koa2-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "cross-env NODE_ENV=developement nodemon --config nodemon.json",
+    "serve": "nodemon --watch src/**/* -e ts,tsx --exec ts-node ./src/app.ts",
+    "start": "npm run build && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "furo_yang",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.1",
+    "@types/koa": "^2.13.4",
+    "@types/koa__cors": "^3.0.3",
+    "@types/koa__router": "^8.0.9",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "log4js": "^6.3.0",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
